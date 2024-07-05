@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    [id=fname]{
+        background-color: rgb(192, 232, 235);
+        border: 3px solid rgb(238, 15, 15);
+        border-radius:5px;
+
+
+    }
+    [id$=lname]{
+        background-color:rgb(192, 232, 235) ;
+        border-radius: 2px;
+        border: 2px solid rgb(165, 42, 122);
+    }
+    
+    [type^=em]{
+        background-color: rgb(192, 232, 235);
+        border: 3px solid rgb(238, 15, 15);
+        border-radius:5px;
+
+    }
+    [id|=pass]{
+        background-color: rgb(192, 232, 235);
+        border-radius: 5px;
+        border: 2px solid rgb(165, 42, 122);
+    }
+    [name~=do]{
+        border: 2px solid rgb(165, 42, 122);
+        background-color:rgb(199, 234, 234) ;
+        border-radius: 5px;
+    }
+    [type*=num]{
+        border: 2px solid rgb(165, 42, 122);
+        background-color:rgb(199, 234, 234);
+        border-radius: 5px;
+    }
+    [type=checkbox]{
+        border:2px solid brown;
+    }
+    [type=range]{
+        border:2px solid red;
+        background-color: red;
+    }
+    [type|=ess]{
+        background-color: aqua;
+    }
+    [type=tel]{
+        border: 3px solid rgb(165, 42, 122);
+        background-color: rgb(199, 234, 234);
+        border-radius:2px;
+    }
+    [type=submit]{
+        background-color: rgb(112, 141, 245);
+    }
+</style>
+<body>
+    <form>
+        <fieldset>
+            <h2><u><center>Registration Form </center></u></h2>
+            <label for="fname" >Enter first name:</label>
+            <input type="text"  id="fname" name="fname" placeholder="First name (required)" required >
+            <br><br>
+            <label for="lname" >Enter last name:</label>
+            <input type="text"  id="lname" name="lname" placeholder="Last name" >
+            <br> <br>
+            <label for="email" >Enter Email id:</label>
+            <input type="email"  id="email" name="email" placeholder="**required field**" required >
+            <br><br>
+            <label for="pass-word" >Enter password:</label>
+            <input type="password"  id="pass-word" name="password" placeholder="Enter password">
+            <br><br>
+            <label for="t" >Contact num:</label>
+            <input type="tel"  id="t" name="tel" placeholder="Enter your mobile num" >
+            <br><br>
+            <label for="dob" >DOB:</label>
+            <input type="date"  id="dob" name="do b" >
+            <br><br>
+            <label for="number" >Age:</label>
+            <input type="number"  id="number" name="number" placeholder="Enter  your age" >
+            <br>
+
+            <p>Choose gender:</p>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <br>
+
+            <p>Expertise:-</p>
+            <input type="checkbox"  id="html" name="html">
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" id="css" name="css">
+            <label for="css" >CSS</label>
+            <br>
+            <input type="checkbox"  id="js" name="js">
+            <label for="js" >JS</label>
+
+            <p> Rate your skill here</p>
+            <input type="range">
+           
+            <br><br>
+            <input type="submit">
+            <br>
+            <br>
+            
+            
+
+            
+        </fieldset>
+    </form>
+</body>
+</html>
