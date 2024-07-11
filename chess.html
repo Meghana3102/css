@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://kit.fontawesome.com/aaa7c417fe.js" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+    .container{  
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;  
+    }
+    .one,.t,.th,.f,.fiv,.s,.se,.e{
+        border: 1px solid ;
+        height: 100px;
+        width: 100px;
+    }
+
+    .one:nth-child(2n+1){
+        background-color: rgb(232, 82, 82);
+    }
+    .t:nth-child(2n){
+        background-color: rgb(232, 82, 82);
+    }
+    .th:nth-child(2n+1){
+        background-color: rgb(232, 82, 82);
+    }.f:nth-child(2n){
+        background-color: rgb(232, 82, 82);
+    }.fiv:nth-child(2n+1){
+        background-color: rgb(232, 82, 82);
+    }
+    .s:nth-child(2n){
+        background-color: rgb(232, 82, 82);  
+    }
+    .se:nth-child(2n+1){
+        background-color: rgb(232, 82, 82);
+    }.e:nth-child(2n){
+        background-color: rgb(232, 82, 82);
+    }
+    #wpawn,#bpawn{
+        font-size: 40px;
+        justify-content: center;
+       padding: 20px;
+    }
+    #wpawn:hover{
+        font-size: 60px;
+        box-shadow: 6px 6px 6px 6px black;
+    }
+    #bpawn:hover{
+        font-size: 60px;
+        box-shadow: 4px 4px 4px 4px white;  
+    }
+     
+</style>
+<body>
+    <div class="container">
+        <div class="col1">
+           <div class="one" ><i id="bpawn" class="fa-solid fa-chess-rook"></i> </div>
+           <div class="one" ><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+           <div class="one"  ></div>
+           <div class="one"  ></div>
+           <div class="one"  ></div>
+           <div class="one"  ></div>
+           <div class="one"  ><i id="wpawn" class="fa-regular fa-chess-pawn"></i></div>
+           <div class="one"  ><i id="wpawn"class="fa-regular fa-chess-rook"></i></div>
+        </div>
+        <div class="col2">
+           <div class="t"  ><i  id="bpawn" class="fa-solid fa-chess-knight"></i>      </div>
+           <div class="t"  ><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+           <div class="t"  ></div>
+           <div class="t"  ></div>
+           <div class="t"  ></div>
+           <div class="t"  ></div>
+           <div class="t"  ><i id="wpawn" class="fa-regular fa-chess-pawn"></i></div>
+           <div class="t"  ><i  id="wpawn" class="fa-regular fa-chess-knight"></i></div>
+        </div>
+        <div class="col3">
+            <div class="th"  ><i id="bpawn"   class="fa-solid fa-chess-bishop"></i></div>
+            <div class="th"  ><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+            <div class="th"  ></div>
+            <div class="th"  ></div>
+            <div class="th"  ></div>
+            <div class="th"  ></div>
+            <div class="th"  ><i id="wpawn"class="fa-regular fa-chess-pawn"></i></div>
+            <div class="th"  ><i id ="wpawn"class="fa-regular fa-chess-bishop"></i></div>
+         </div>
+         <div class="col4">
+            <div class="f"  ><i id="bpawn" class="fa-solid fa-chess-king"></i></div>
+            <div class="f"  ><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+            <div class="f"  ></div>
+            <div class="f"  ></div>
+            <div class="f"  ></div>
+            <div class="f"  ></div>
+            <div class="f"  ><i id="wpawn"   class="fa-regular fa-chess-pawn"></i></div>
+            <div class="f"  ><i id="wpawn" class="fa-regular fa-chess-king"></i>    </div>
+         </div>
+         <div class="col5">
+            <div class="fiv"  ><i id="bpawn"    class="fa-solid fa-chess-queen"></i></div>
+            <div class="fiv"  ><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+            <div class="fiv"  ></div>
+            <div class="fiv"  ></div>
+            <div class="fiv"  ></div>
+            <div class="fiv"  ></div>
+            <div class="fiv"  ><i id="wpawn"   class="fa-regular fa-chess-pawn"></i></div>
+            <div class="fiv"  ><i id="wpawn" class="fa-regular fa-chess-queen"></i></div>
+         </div>
+         <div class="col6">
+            <div class="s"  ><i  id="bpawn" class="fa-solid fa-chess-bishop"></i></div>
+            <div class="s"  ><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+            <div class="s"  ></div>
+            <div class="s"  ></div>
+            <div class="s"  ></div>
+            <div class="s"  ></div>
+            <div class="s"  ><i id="wpawn" class="fa-regular fa-chess-pawn"></i></div>
+            <div class="s"  ><i id="wpawn" class="fa-regular fa-chess-bishop"></i></div>
+         </div>
+         <div class="col7">
+            <div class="se"  ><i  id="bpawn" class="fa-solid fa-chess-knight"></i>      </div>
+            <div class="se"  ><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+            <div class="se"  ></div>
+            <div class="se"  ></div>
+            <div class="se"  ></div>
+            <div class="se"  ></div>
+            <div class="se"  ><i id="wpawn" class="fa-regular fa-chess-pawn"></i></div>
+            <div class="se"  ><i id="wpawn" class="fa-regular fa-chess-knight"></i></div>
+         </div>
+         <div class="col8">
+            <div class="e"><i  id="bpawn" class="fa-solid fa-chess-rook"></i> </div>
+            <div class="e"><i id="bpawn" class="fa-solid fa-chess-pawn"></i></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"></div>
+            <div class="e"><i id="wpawn" class="fa-regular fa-chess-pawn"></i></div>
+            <div class="e"><i id="wpawn" class="fa-regular fa-chess-rook"></i></div>
+         </div>     
+
+    </div>
+</body>
+</html>
