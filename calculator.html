@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .outer{
+            border: 2px solid ;
+            height: 408px;
+            width: 230px;
+        }
+        .up{
+            height: 70px;
+            background-color: rgba(165, 42, 42, 0.534);
+            border: 1px solid;
+        }
+        .zero{
+            position: relative;
+            left:210px;
+            top:5px;
+            font-size: 30px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px; 
+            grid-template-rows:50px 5px 50ox 50px;
+            gap:10px;
+            justify-content:center;
+        }.item{
+            background-color:rgba(182, 103, 255, 0.363);
+            border-radius: 20%;
+            padding: 20px;
+            box-shadow: 2px 2px 2px inset;
+        }.item:hover{
+            background-color:rgba(255, 0, 0, 0.715);
+        }
+        .item8{
+            grid-row:2/6;
+            grid-column: 4/5;
+            padding-top:10px;
+            font-size: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+
+        <div class="up">
+           <p class="zero">0</p>
+        </div>
+      
+        <div class="container">
+            <button class=" item item1">+</button>
+            <button class="item item2">-</button>
+            <button class="item item3">*</button>
+            <button class="item item4">/</button>
+            <button class="item item5">7</button>
+            <button class="item item6">8</button>
+            <button class="item item7">9</button>
+            <button class="item item8">=</button>
+            <button class="item item9">4</button>
+            <button class="item item10">5</button>
+            <button class="item item11">6</button>
+            <button class="item item12">1</button>
+            <button class="item item13">2</button>
+            <button class="item item14">3</button>
+            <button class="item item15">0</button>
+            <button class="item item16">.</button>
+            <button class="item item17">AC</button>
+            <!-- <div class="item item18">.</div>
+            <div class="item item19">AC</div>
+            <div class="item item20">AC</div> -->
+        </div>
+    </div> 
+</body>
+</html>

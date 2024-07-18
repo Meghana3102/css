@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<style>
+    .outer{
+        border: 2px solid;
+        height: 100vh;
+        width: 100vw;
+        overflow-y: scroll;   
+    }
+    .main{  
+        height: 100px;
+        width: 100vw;
+        position: sticky;
+        top: 0px;
+        background-color:white;
+        height: 100px;   
+    }
+    #menu{
+        position: relative;
+        left:20px;
+        top:30px;
+    }
+    #maintext1{
+        position: relative;
+        top:-30px;
+    }
+    .maintext2{
+        position: absolute;
+        top:0px;
+        right: 40px;
+        text-decoration-line:none ;
+        
+        
+       
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns:300px 300px 300px 300px;
+        grid-template-rows:500px 500px 500px 500px;
+        gap:20px;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .item{
+        background-color:white;
+    }
+    .item:hover{
+        box-shadow: 5px 5px 5px 5px;
+    }
+    .imgbox{
+        height: 400px;
+        width: 600px;
+        border: 2px solid;
+        margin-left: 460px;
+        margin-top: -900px; 
+    }
+   
+    .container2{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 50px 100px 100px;
+        gap:20px;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .box{
+        background-color: white;
+    }
+   /* .box5{
+        border: 1px solid;
+
+    }*/
+    .imglorem{
+        position: relative;
+        left:10px;
+        top:10px;
+    }
+    .lorem{
+        position: relative;
+        top:-90px;
+        left: 100px;
+    }
+   
+    .text1{
+        position: relative;
+        left:100px;
+        top:-90px;
+    }
+    .innbox{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        gap:10px;
+
+    }
+    .inbox1{
+        position: relative;
+        background-color:grey;
+        height: 17px;
+        width:auto;  
+    }.inbox1:hover{
+        box-shadow: 4px 4px 4px;
+    }
+    .duck{
+        position: relative;
+        background-color:grey;
+        height: 17px;
+        width:40px;
+    }.duck:hover{
+        box-shadow: 4px 4px 4px;
+    }
+
+   
+</style>
+<body>
+    <div class="outer">
+        <div class="main">
+            <ion-icon id="menu" size="large" name="reorder-three-outline"></ion-icon>
+           <h1 id="maintext1"><center>Myfood</center></h1>
+           <h1 class="maintext2"><a href="mailto:meghana.jella4@gmail.com">Mail</a></h1>
+
+        </div>
+        <br><br>
+
+        <div class="container">
+            <div class=" item item1">
+                <img src="./css images/sandwich1.jpg"  height="350px" width="298px"/>
+                <h2><center>The Perfect Sandwich, A Real NYC Classic</center></h2>
+                <p><center>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</center></p>
+            </div>
+            <div class="item item2">
+                <img src="./css images/fish curry1.jpg" height="350px" width="299px" alt="">
+                <h2><center>Let Me Tell You About This Steak</center></h2>
+                <p><center>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</center></p>
+            </div>
+            <div class="item item3">
+                <img src="./css images/cherries1.jpg" height="350px" width="298px">
+                <h2><center>Cherries, interrupted</center></h2>
+                <p><center>Lorem ipsum text praesent tincidunt ipsum lipsum.<br>What else?</center></p>
+            </div>
+            <div class="item item4">
+                <img src="./css images/wine and pasta1.jpg" height="350px" width="298px" alt="">
+                <h2><center>Once Again, Robust Wine and Vegetable Pasta</center></h2>
+                <p><center>Lorem ipsum text praesent tincidunt ipsum lipsum.</center></p>
+            </div>
+            <div class="item item5">
+                <img src="./css images/popsicle1.jpg"  height="350px" width="298px">
+                <h2><center>All I Need Is a Popsicle</center></h2>
+                <p><center>Lorem ipsum text praesent tincidunt ipsum lipsum.</center></p>
+            </div>
+            <div class="item item6">
+                <img src="./css images/salmon1.jpg" height="350px" width="298px" alt="">
+                <h2><center>Salmon For Your Skin</center></h2>
+                <p><center>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</center></p>
+            </div>
+            <div class="item item7">
+                <img src="./css images/sandwich1.jpg" height="350px" width="298px" alt="">
+                <h2><center>The Perfect Sandwich, A Real Classic</center></h2>
+                <p><center>The Perfect Sandwich, A Real Classic</center></p>
+            </div>
+            <div class="item item8">
+                <img src="./css images/puff1.jpg" height="350px" width="298px" alt="">
+                <h2><center>Le French</center></h2>
+                <p><center>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</center></p>
+            </div>
+        </div>
+
+        <center><b><h3>About Me,The Food man</h3></b></center>
+        
+        <div class="imgbox">
+             <img  class"foodman" src="./css images/chef.jpg"  height="400px" width="600px">
+        </div>
+
+        <div class="textbox">
+            <!-- <center><b><h3>About Me,The Food man</h3></b></center> -->
+            <h4><i><center>With Passion For Real, Good Food</center></i></h4>
+            <p><center>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</center></p>
+        </div>
+        
+        <hr>
+        <br><br>
+        <div class="container2">
+            <div class=" box box1"><h3>FOOTER</h3></div>
+            <div class=" box box2"><h3>BLOG POSTS</h3></div>
+            <div class=" box box3"><h3>POPULAR TAGS</h3></div>
+            <div class=" box box4">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</div>
+
+            <div class=" box box5">
+                <img  class=" imglorem" src="./css images/lorem1.jpg" height="80px" width="80px"/>
+                <h4 class="lorem"> LOREM</h4>
+                <p class="text1">Sed mattis nunc</p>
+            </div>
+
+            <div class=" box box6 innbox">
+                <div class="inbox1">Travel</div>
+                <div class="inbox1">NewYork</div>
+                <div class="inbox1">Dinner</div>
+                <div class="inbox1"> Salmon</div>
+                <div class="inbox1">France</div>
+                <div class="inbox1">Drinks</div>
+                <div class="inbox1">Ideas</div>
+                <div class="inbox1">Flavours</div>
+                <div class="inbox1">Cuisine</div>
+                <div class="inbox1">Chicken</div>
+                <div class="inbox1">Dressing</div>
+                <div class="inbox1">Fries</div>
+                <div class="inbox1">Fish</div>
+        
+            </div>
+            <div class=" box box7">Powered by <a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=w3.css" target="_blank">w3.css</a></div>
+
+            <div class=" box box8">
+                <img src="./css images/ipsum1.jpg" height="80px" width="80px" alt="">
+                <h4 class="lorem">IPSUM</h4>
+                <p class="text1">Praes tinci sed</p>
+            </div>
+            <div class=" box box9">
+                <div class="duck">Duck</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
