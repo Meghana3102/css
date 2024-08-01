@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .outer{
+            height: 400vh;
+            width: 100vw;
+            border: 2px solid;
+            background-image: url(./IMG/strip-bg.jpg);
+            padding: 0% 2%;
+        }
+        .white{
+            height: 400vh;
+            width: 100vw;
+            border: 1px solid;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 5% 22% 22% 22% 22% 5%;
+    
+        }
+       /* .item{
+            border: 1px solid;
+        }*/
+        .item1,.item10{
+            grid-column: 1/3;
+        }
+      
+        
+        .item1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:darkorange ;
+            padding:2% 2%;
+
+        }
+       
+
+        
+        .menu{
+            display: flex;
+            justify-content: end;
+            gap:15%;
+            font-size: 150%;
+            list-style: none;
+        }li:hover{
+            background-color: aqua;
+        }
+        .strip{
+            border: 1px solid;
+            color: white;
+            font-size: 200%;
+            padding: 1% 1%;
+            border-radius: 10%;
+        }
+        .item2,.item6{
+            font-size: 200%;
+            background-color:rgba(3, 31, 132, 0.669);
+            padding: 7.5% 0%;
+
+        }
+        .content1,.content3{
+            background-color: white;
+            border-top-right-radius: 55%;
+            border-bottom-right-radius: 50%;
+            padding: 2% 3%;
+            width: 45vw;
+            text-align: left;
+
+        }
+        .item3{
+            background-image: url(./IMG/strip-bg-01.jpg);
+            font-size: 200%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5% 5%;
+            text-align: justify;
+        }
+        .item4{
+            background-image: url(./IMG/strip-bg-02.jpg);
+            padding: 21% 0%;
+        }
+       .item5{
+        font-size: 200%;
+        padding: 12% 0%;
+        background-color: rgba(113, 7, 7, 0.765);
+        padding-left: 2%;
+       }
+       .content2{
+        background-color: white;
+        width: 45vw;
+        padding: 3% 4%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        text-align: right;
+       }
+       .item6{
+        background-color:rgba(0, 0, 0, 0.655);
+        font-size: 200%;
+        padding: 9% 0%;
+       }
+       .item7{
+        background-image: url(./IMG/strip-bg-03.jpg);
+        padding: 23% 0%;
+       }
+       .item8{
+        font-size: 200%;
+        padding: 10% 10%;
+        background-color:rgb(73, 111, 225);
+       }
+       
+       #inputt{
+        height: 10vh;
+        width:30vw;
+       }
+
+       .item9{
+        font-size: 200%;
+        background-image: url(./IMG/strip-bg-04.jpg);
+        padding: 7% 0%;
+        padding-left: 5%;
+       }
+       .content5{
+        background-color: white;
+        padding: 3% 5%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        text-align: right; 
+       }
+       .item10{
+        background-image: url(./IMG/strip-bg-05.jpg);
+       }
+       a{
+        text-decoration: none;
+        color: black;
+       }
+       .h:hover{
+            background-color: white;   
+       }
+
+
+       @media screen and (min-width:0px) and (max-width:420px){
+           .item1,.menu{
+            flex-direction:column ;
+           }
+           
+           .hjm{
+            display: grid !important;
+            grid-template-columns: 100% !important;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto !important;
+           }
+       }
+       
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="white">
+            <div class="item item1">
+                <p class="strip">STRIP</p>
+                <ul class="menu">
+                    <a class="h" href="#home">HOME</a>
+                    <a class="h" href="#services">SERVICES</a>
+                    <a class="h" href="#about">ABOUT</a>
+                    <a class="h"  href="#contact">CONTACT</a>
+                    <a class="h" href="#template">TEMPLATE</a>
+                </ul>
+            </div>
+
+            <div class="item item2" id="home">
+                <div class="content1">
+                <h3>INTRODUCTION</h3>
+                <p>Strip CSS Template is free <a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=bootstrap" target="_blank">Bootstrap</a> HTML layout for any kind of purpose. you may support us by telling your friends about TemplateMo website, please  <a href="tel:9963981179" target="_blank">contact us</a> if you have any question. </p>
+                 <p>This template is last updated on 27 July 2020 for main menu with an external link support . You just need to put external in link class for external URL web pages.</p>
+                </div>
+            </div>
+            <div class="item item3" >
+                <div >
+                <h3>OUR MISSION</h3>
+                <p>We provide 100% free responsive Bootstrap templates for everyone. Feel free to use our templates for your cilents or business websites. You may visit TemplateMo for latest and greatest HTML CSS layouts.</p>
+                 </div>
+
+            </div>
+            <div class="item item4">
+                 <center><img src="./IMG/strip-01.jpg" alt=""> </center>
+            </div>
+            <div class="item item5" id="services">
+                <div class="content2">
+                    <h3>OUR SERVICES</h3>
+                    <p>The services section of a website plays a pivotal role in communicating what a business offers. </p>
+                    <p>It serves as a gateway for visitors to understand the range of products or services available, often influencing their decision-making process. A well-designed services section can captivate users, highlight vital offerings, and drive conversions.</p>
+
+                </div>
+            </div>
+            <div class="item item6" id="about">
+                <div class="content3">
+                    <h2>About our company</h2>
+                    <p>All strategies lead to technology—companies must reinvent all parts of the enterprise with data, AI and new ways of working to build resilience and find paths to new growth.</p>
+                    <p>   We are 128,000 people across the world. We have many brand names in over 190 countries. We are a global company with a global purpose.</p>
+                    </p>
+                </div>
+
+            </div>
+            <div class="item item7">
+               <center> <img src="./IMG/strip-02.jpg" alt=""></center>
+            </div>
+            <div class="item item8" id="contact">
+                <div class="content4">
+                    <h3>Send a Message</h3>
+                <input type="text" name="" id="inputt" placeholder="Name" > <br>
+                <input type"mail" name="" id="inputt" placeholder="Email"> <br>
+                <input type="text" name="" id="inputt" placeholder="Subject"> <br>
+                <textarea name=""placeholder="Message" id="inputt" cols="100"></textarea> <br>
+                <input type="submit" value="Send a Message">
+                 </div>
+            </div>
+            <div class="item item9" id="template">
+                <div class="content5">
+                    <h3>Contact us</h3>
+                    <p>Connect with like-minded people to broader your network globally.
+                    Learn from the finest and experienced management faculty plus industry leaders.</p>
+                         OUR ADDRESS
+                        <p>   160-420 Presente Consecutor ,Dictum massa 105678.
+                        <a href="tel:9876545678">contact here</a> </p> 
+                </div>
+
+            </div>
+            <div class="item item10"></div>
+            <!-- <div class="item item11">item11</div> -->
+            <!-- <div class="item item12">item12</div> -->
+        
+    </div>
+        </div>
+    </div>  
+</body>
+</html>

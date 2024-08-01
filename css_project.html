@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+       
+        .outer{
+            height: 365vh;
+            width: 100vw;
+            border: 2px solid;
+            background-color: grey;
+            padding: 0% 2.5%;
+        }
+        .white{
+            height:350vh;
+            width: 95vw;
+            padding: 1% 2.5%;
+            background-color: white;
+        }
+        .menu{
+            height: 10vh;
+            width:93vw ;
+            background-color: darkgoldenrod;
+            display: flex;
+            justify-content: space-between;
+            padding: 1% 1% 1% 1%;
+            align-items: center;
+
+            
+        }
+        .strip{
+            height: 30%;
+            width: 6%;
+            border: 1px solid white;
+            font-size: 160%;
+            color: white;
+            padding:1% 1% 1% 2%;
+           
+        }
+        .items{
+            display: flex;
+            gap:40px;
+            padding: 1% 1%;
+            list-style: none;
+            font-size: 180%;
+            justify-content:space-around;
+            color: white;    
+        }
+        .main{
+            display: grid;
+            padding-top: 2%;
+            grid-template-columns: 95vw;
+            grid-template-rows:80vh 80vh 80vh 80vh 10vh;
+        }
+        .item{
+            border: 2px solid;
+            background-color:aqua;
+        }
+        .item1{
+            background-image:url(./IMG/strip-bg-01.jpg);
+        }
+        .left_con1,.left_con2{
+            height: 80%;
+            width: 40%;
+            font-size: 25px;
+            background-color: white;
+            margin-top:1.5%;
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 3%;
+            border-top-right-radius:50%;
+            border-bottom-right-radius: 50%;
+            text-align: justify;
+        }
+        .right_con1{
+            height: 80%;
+            width: 80%;
+            margin-left: 130%;
+            font-size: 100%;
+            margin-top: -40%;
+            color: white;
+        }
+        .item2{
+            background-image: url(./IMG/strip-bg-02.jpg);
+        }#strip-01{
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        .right_con2{
+            height: 80%;
+            width: 40%;
+            background-color: white;
+            margin-top: -29.5%;
+            margin-left: 49%;
+            padding-top: 5%;
+            padding-left:6%;
+            padding-right: 5%;
+            font-size: 25px;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            text-align: justify;
+        }
+        .item3{
+            background-image: url(./IMG/strip-bg-03.jpg);
+        }
+        #strip_2{
+            margin-top: -80%;
+            margin-left: 130%;
+        }
+
+        .item4{
+            background-image: url(./IMG/strip-bg-04.jpg);
+        }
+        .left_con3{
+            height: 80%;
+            width: 40%;
+            font-size: 100%;
+            margin-left: 5%;
+            margin-top: 7.5%;
+        }
+        .item5{
+            background-image: url(./IMG/strip-bg-05.jpg);
+        }
+        .inputt{
+            height: 5vh;
+        }
+        .right_con3{
+            height: 80%;
+            width: 40%;
+            margin-left: 49%;
+            margin-top:-38%;
+            background-color: white;
+            padding-top: 5%;
+            padding-left: 6%;
+            padding-right: 5%;
+            font-size: 150%;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            text-align: justify;
+        }
+        .blue{
+            text-decoration: none;
+        }
+        .blue:hover{
+            background-color: black;
+            color: white;
+        }
+        input::placeholder{
+            background-color: aquamarine8;
+        }
+        
+        @media screen and (min-width:320px) and (max-width:420px){
+            .items,.strip{
+                flex-direction: column;
+            }
+        }
+        @keyframes aa{
+            from{
+                transform: scale(1,1);
+            }
+            to{transform: scale(1.5,1.5);}
+        }
+        #strip-01,#strip_2{
+        animation-name: aa;
+        animation-duration: 3s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        }
+
+        @keyframes bb{
+            50%{width: 90%;background-color:blue;color: white;}
+            100%{width: 0%;background-color:blue; color: white;}
+        }
+        #intro{
+            animation-name: bb;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cc{
+            50%{width: 90%;background-color:red;color: white;}
+            100%{width: 0%;background-color:red; color: white;}
+        }
+        #services{
+            animation-name: cc;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes dd{
+            50%{width: 90%;background-color:gray;color: white;}
+            100%{width: 0%;background-color:gray; color: white;}
+        }
+        #about{
+            animation-name: dd;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div  class="outer">
+       <div class="white">
+           <div class="menu">
+                <p class="strip" >STRIP</p>
+                <ul class="items">
+                    <a class="blue" href="#home">HOME</a>
+                    <a class="blue" href="#Services">SERVICES</a>
+                    <a class="blue" href="#About">ABOUT</a>
+                    <a class="blue" href="#Contact">CONTACT</a>
+                    <a class="blue" href="#Template">TEMPLATE</a>
+                </ul>     
+           </div>
+           
+           <div class="main">
+                <div id="home" class="item item1">
+                   <div class="left_con1">
+                        <h2 id="intro" style="color:blue">INTRODUCTION</h2>
+                        <p>Strip CSS Template is free <a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G0&p=bootstrap">Bootstrap</a> HTML layout for any kind of purpose. you may support us by telling your friends about TemplateMo website, please  <a href="tel:9963981179">contact us</a> if you have any question. 
+                        <br>
+                        This template is last updated on 27 July 2020 for main menu with an external link support . You just need to put external in link class for external URLs or web pages.</p>
+                        <div class="right_con1">
+                        <h2 id="intro">Our Mission</h2>
+                        <p>We provide 100% free responsive Bootstrap templates for everyone. Feel free to use our templates for your cilents or business websites. You may visit TemplateMo for latest and greatest HTML CSS layouts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Services" class="item item2">
+                    <img id="strip-01"  src="./css images/strip-01.jpg" alt="">
+                    <div class="right_con2">
+                        <h2 id="services" style="color:red">OUR SERVICES</h2>
+                        <p>The services section of a website plays a pivotal role in communicating what a business offers. 
+                         <br>It serves as a gateway for visitors to understand the range of products or services available, often influencing their decision-making process. A well-designed services section can captivate users, highlight vital offerings, and drive conversions.
+                        </p>
+                    </div>
+                </div>
+                <div id="About" class="item item3">
+                    <div class="left_con2">
+                        <h2 id="about">ABOUT OUR COMPANY</h2>
+                        <p>All strategies lead to technology—companies must reinvent all parts of the enterprise with data, AI and new ways of working to build resilience and find paths to new growth.
+                            <br>We are 128,000 people across the world. We have many brand names in over 190 countries. We are a global company with a global purpose.
+                        </p>
+                        <img  id="strip_2" src="./css images/strip-02.jpg" alt="">
+                    </div>
+                </div>
+                <div id="Contact" class="item item4">
+                    <div class="left_con3">
+                        <form>
+                         <p style="color: white; font-size:25px">Send a Message</p>
+                        <input class="inputt name1" type="text" placeholder="Name" size="30" height="50">
+                        <input class="inputt" type="email" placeholder="Email" size="30"><br> <br>
+                        <input class="inputt" type="text" placeholder="Subject" size="66.5"> <br> <br>
+                        <textarea  name="msg" id="msg" placeholder="Send a Message " rows="10" cols="62"></textarea> <br>
+
+                        <input class="inputt" type="button"  value="Send it Now" >
+                    </form>
+                    </div>
+                    <div class="right_con3">
+                        <h2 id="intro" style="color: blue;">CONTACT US</h2>
+                        <p>Connect with like-minded people to broader your network globally.Explore & create your own schedule for an effective self-paced learning.
+                            <br>Learn from the finest and experienced management faculty plus industry leaders.
+                            <br> <br> OUR ADDRESS
+                            <br>   160-420 Presente Consecutor ,Dictum massa 105678.
+                            <br>Tel <a href="tel:9876545678"></a> Email <a href="mailto:drfghj@gmail.com"></a>
+
+                        </p>
+                    </div>
+
+                    
+                </div>
+                <div id="Template" class="item item5">
+                </div>
+
+           </div>
+
+           
+       </div>
+    </div>
+</body>
+</html>
